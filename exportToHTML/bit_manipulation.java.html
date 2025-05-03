@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>bit_manipulation.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #7a7e85;}
+.s4 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+bit_manipulation.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">util</span><span class="s2">.*;</span>
+<span class="s0">public class </span><span class="s1">bit_manipulation </span><span class="s2">{</span>
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String </span><span class="s2">[] </span><span class="s1">args</span><span class="s2">){</span>
+<span class="s3">//        int n=5;// its Get bit(bitmask ,and(&amp;) operation)</span>
+<span class="s3">//        int pos=2;</span>
+<span class="s3">//        int bitmask=1&lt;&lt;pos;</span>
+
+<span class="s3">//        if((bitmask&amp;n)==0){</span>
+<span class="s3">//            System.out.println(&quot; bit was zero&quot;);</span>
+<span class="s3">//        }</span>
+<span class="s3">//        else{</span>
+<span class="s3">//            System.out.println(&quot;bit was 1&quot;);</span>
+<span class="s3">//        }</span>
+<span class="s3">//        System.out.println(bitmask);</span>
+
+<span class="s3">//        int n=5;//Its is Set bit( bitmask ,or (|) operation)</span>
+<span class="s3">//        int pos=1;</span>
+<span class="s3">//        int bitmask=1&lt;&lt;pos;</span>
+<span class="s3">//        int new_bit= bitmask|n;</span>
+<span class="s3">//        System.out.println(new_bit);</span>
+
+<span class="s3">//        int n=5;// clear bit(bitmask, and with notbm)</span>
+<span class="s3">//        int pos=2;</span>
+<span class="s3">//        int bitmask=1&lt;&lt;pos;</span>
+<span class="s3">//        int notbm=~(bitmask);</span>
+<span class="s3">//        int new_bit=(notbm&amp;n);</span>
+<span class="s3">//        System.out.println(new_bit);</span>
+
+        <span class="s1">Scanner sc </span><span class="s2">=</span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">oper </span><span class="s2">=</span><span class="s1">sc</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+        <span class="s3">//oper=1:setbit, oper =0:clearbit</span>
+        <span class="s0">int </span><span class="s1">n</span><span class="s2">=</span><span class="s4">5</span><span class="s2">;</span>
+        <span class="s0">int </span><span class="s1">pos </span><span class="s2">=</span><span class="s4">1</span><span class="s2">;</span>
+
+        <span class="s0">int </span><span class="s1">bitmask </span><span class="s2">=</span><span class="s4">1</span><span class="s2">&lt;&lt;</span><span class="s1">pos</span><span class="s2">;</span>
+        <span class="s0">if</span><span class="s2">(</span><span class="s1">oper</span><span class="s2">==</span><span class="s4">1</span><span class="s2">){</span>
+            <span class="s3">//set</span>
+            <span class="s0">int </span><span class="s1">newnumber </span><span class="s2">=</span><span class="s1">bitmask</span><span class="s2">|</span><span class="s1">n</span><span class="s2">;</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">newnumber</span><span class="s2">);</span>
+        <span class="s2">}</span><span class="s0">else</span><span class="s2">{</span>
+            <span class="s3">//clear</span>
+            <span class="s0">int </span><span class="s1">newbitMask</span><span class="s2">=~(</span><span class="s1">bitmask</span><span class="s2">);</span>
+            <span class="s0">int </span><span class="s1">newno </span><span class="s2">=</span><span class="s1">newbitMask</span><span class="s2">&amp;</span><span class="s1">n</span><span class="s2">;</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">newno</span><span class="s2">);</span>
+        <span class="s2">}</span>
+
+        <span class="s2">};</span>
+    <span class="s2">}</span>
+
+
+</pre>
+</body>
+</html>
