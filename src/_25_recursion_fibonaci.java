@@ -11,7 +11,7 @@
 //    }
 //}
 // recresion fibonacci
-public class recursion_25_fibonaci {
+public class _25_recursion_fibonaci {
     public  static  void printfib(int a,int b,int n){
         if(n==0){
             return;

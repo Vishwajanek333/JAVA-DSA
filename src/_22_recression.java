@@ -1,7 +1,5 @@
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.*;
-public class recression_22 {
+public class _22_recression {
     public static void printnumber(int n){// print the  number 1,2,3,4,5.
         if(n==6){
             return;

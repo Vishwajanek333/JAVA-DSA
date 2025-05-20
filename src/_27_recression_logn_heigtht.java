@@ -1,4 +1,4 @@
-public class recression_27_logn_heigtht {
+public class _27_recression_logn_heigtht {
     public class recression26 {// power of height
         public static int calpow(int x,int n){
             if(n==0){

@@ -1,4 +1,4 @@
-public  class print_sum_recerssion_23{
+public  class _23_print_sum_recerssion {
     public static void printsum(int i ,int n,int sum) {
             if(i==n){
                 sum+=i;

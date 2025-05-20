@@ -1,4 +1,4 @@
-public class recuression_factorial_24 {
+public class _24_recuression_factorial {
     public static  int  printfactor(int n){
         if(n==1||n==0){
             return 1;

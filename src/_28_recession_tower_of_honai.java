@@ -13,6 +13,6 @@ public class _28_recession_tower_of_honai {
     public static void main(String args[]){
         int n=3;
         towerhonai(n,"S","H","D");
-    }
+    }// time complexity O(2^n)
 }
 

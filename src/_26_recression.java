@@ -1,4 +1,4 @@
-public class recression26 {// power of height
+public class _26_recression {// power of height
     public static int calpow(int x,int n){
         if(n==0){
             return 1;
