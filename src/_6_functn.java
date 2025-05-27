@@ -1,4 +1,3 @@
-import java.security.spec.RSAOtherPrimeInfo;
 import java.util.*;
 
 public class function {
@@ -8,7 +7,7 @@ public class function {
 //        }
 //        public static void main(String args[]){
 //            Scanner snc = new Scanner(System.in);
-//            String name = snc.nextLine();
+//            String name = snc.nextLine();git s
 //            MyName(name);// fn call
 //
 
