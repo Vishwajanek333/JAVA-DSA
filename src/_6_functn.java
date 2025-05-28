@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class function {
+public class _6_functn {
 //        public static void MyName(String name){
 //            System.out.print(name);
 //            return;
