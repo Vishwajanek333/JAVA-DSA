@@ -1,5 +1,12 @@
 class LL { //linkedlist
     Node head;
+    private int size;// it for only to track the size of ll
+
+       LL(){ // constructer
+           this.size =0;
+       }
+
+
     class Node{
         String data;
         Node next;
@@ -7,6 +14,8 @@ class LL { //linkedlist
         Node(String data){
             this.data =data;
             this.next =null;
+            size++;
+
         }
     }
     // 1)add-firstnode
@@ -15,7 +24,9 @@ class LL { //linkedlist
             if(head == null){
                 head = newNode;
                 return;
+
             }
+
             newNode.next =head;
             head =newNode;
         }
@@ -25,13 +36,13 @@ class LL { //linkedlist
         if(head == null){
             head = newNode;
             return;
-        }
+        }else{
         Node currNode = head; // to traves  node
         while(currNode.next!=null){ //
             currNode = currNode.next;
         }
         currNode.next =newNode;// curr node.next is the last node
-    }
+    } }
     //print
     public void printList(){
         if(head == null){
@@ -51,6 +62,7 @@ class LL { //linkedlist
             System.out.println("this list is empty");
             return ;
         }
+        size--;
         head =head.next;
 
         }
@@ -60,7 +72,10 @@ class LL { //linkedlist
         if(head == null){ // corner case list empty
             System.out.println("this list is empty");
             return ;
-        }   if(head.next == null){ // corner case2 is if last node before is deleted.
+        }
+
+             size--;
+            if(head.next == null){ // corner case2 is if last node before is deleted.
             head =null;
             return;
         }
@@ -74,6 +89,12 @@ class LL { //linkedlist
         secondLast.next =null;
         }
 
+        //  retrun size
+
+    public int getSize() {
+        return size;
+    }
+
     public static void main(String args[]){
         LL list =new LL();// to make linked list  we should make your own class object
         list.addFirst("a");
@@ -85,5 +106,11 @@ class LL { //linkedlist
 
         list.addFirst("this");
         list.printList();
+
+        list.deleteFirst();
+        list.printList();
+
+        System.out.println(list.getSize());
+
     }
 }
