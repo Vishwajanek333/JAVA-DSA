@@ -1,15 +1,16 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class javapratice {
     public static void main(String arg[]){
+        // to check odd or even
         Scanner sc =new Scanner(System.in);
-        int size = sc.nextInt();
-
-        for(int i=0;i<size;i++){
-            int num[]=size[]
-            System.out.println();
-
+        int num = sc.nextInt();
+        if(num%2==0) {
+            System.out.print("even");
+        }
+        else{
+            System.out.println("its odd");
         }
     }
-
 }
